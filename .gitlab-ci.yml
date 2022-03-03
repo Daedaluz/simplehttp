@@ -1,0 +1,10 @@
+stages:
+    - lint
+    - build
+    - container
+
+include:
+    - project: "util/ci-templates"
+      file: "/go.yml"
+    - project: "util/ci-templates"
+      file: "/docker.yml"
